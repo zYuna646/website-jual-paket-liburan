@@ -12,4 +12,9 @@ class Category extends Model
     protected $fillable = [
         'name',
     ];
+
+    public function holidayPackages()
+    {
+        return $this->hasMany(HolidayPackages::class);
+    }
 }

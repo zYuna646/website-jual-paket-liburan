@@ -17,4 +17,14 @@ class HolidayPackages extends Model
         'image',
         'unit'
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+    public function transactions()
+    {
+        return $this->hasMany(Transaction::class);
+    }
 }

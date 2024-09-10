@@ -33,6 +33,10 @@ class User extends Authenticatable
         'remember_token',
     ];
     
+    public function transactions()
+    {
+        return $this->hasMany(Transaction::class);
+    }
 
     public function role()
     {

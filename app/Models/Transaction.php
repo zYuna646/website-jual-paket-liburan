@@ -24,4 +24,14 @@ class Transaction extends Model
             $transaction->code = Str::uuid()->toString();
         });
     }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function holidayPackage()
+    {
+        return $this->belongsTo(HolidayPackages::class);
+    }
 }
