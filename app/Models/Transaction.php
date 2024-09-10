@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Str; // untuk membuat kode unik
+use Illuminate\Support\Str; 
 
 class Transaction extends Model
 {
@@ -14,6 +14,7 @@ class Transaction extends Model
         'user_id',
         'holiday_package_id',
         'quantity',
+        'status',
         'code'
     ];
 

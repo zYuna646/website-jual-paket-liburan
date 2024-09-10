@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('holiday_package_id')->constrained()->onDelete('cascade');
             $table->integer('quantity');
+            $table->enum('status', ['pending', 'success', 'cancel'])->default('pending');
             $table->string('code');
             $table->timestamps();
         });
