@@ -69,7 +69,7 @@ class TransactionResource extends Resource
                     ->options([
                         'pending' => 'Pending',
                         'success' => 'Success',
-                        'failed' => 'Failed',
+                        'cancel' => 'Cancel',
                     ])
                     ->sortable(),
                 TextColumn::make('quantity')->sortable(),
